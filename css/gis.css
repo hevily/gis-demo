@@ -1,0 +1,95 @@
+
+.ol-zoomslider{
+    top:100px;
+    left: 7px;
+  }
+#map {
+    /*border: 1px solid #B9B9B9;*/
+    position:relative;
+    height: 100% !important;
+    margin-top: 1px;
+}
+
+/*.olFramedCloudPopupContent{*/
+/*overflow-y:auto;*/
+/*overflow-x:hidden;*/
+/*}*/
+
+
+/* Marker css*/
+#popup{
+    border-radius: 20px;
+}
+#infoWindow {
+    z-index: 999;
+    width: 180px;
+    height: auto;
+    font-size: 14px;
+    margin-left: 16px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 5px;
+    line-height: 25px;
+}
+#infoWindow .popup-url{
+    border-top: 1px solid #a1a1a1;
+    padding-top: 10px;
+}
+
+#infoWindow .popup-url a{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#location{
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10000
+}
+
+
+.ol-popup {
+    position: absolute;
+    background-color: white;
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+}
+.ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+#popup-content {
+    width:200px !important;
+}
+.ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+.ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
